@@ -3,7 +3,7 @@
 class Procesa{
 	//declaramos atributos
 	private $_nombre;
-	private $_teléfono;
+	private $_telefono;
 	private $_email;
 	private $_asunto;
 	private $_ejecutivo;
@@ -23,12 +23,12 @@ class Procesa{
 		$this->_nombre = $nombre;
 	}
 
-	public function getTeléfono(){
-		return $this->_teléfono;
+	public function getTelefono(){
+		return $this->_telefono;
 	}
 
-	public function setTeléfono($teléfono){
-		$this->_teléfono = $_teléfono;
+	public function setTelefono($telefono){
+		$this->_telefono = $telefono;
 	}
 	
 	public function getEmail(){

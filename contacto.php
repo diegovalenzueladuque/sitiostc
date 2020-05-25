@@ -1,33 +1,14 @@
 <?php
-/*imprimir en pantalla las variables que recibimos desde el formulario
-print_r($_POST);*/
+//imprimir en pantalla las variables que recibimos desde el formulario
+//print_r($_POST);
 
-//error_reporting(E_ALL);
-//ini_set('display_errors', '1');
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 require ('datos.php');
 require ('procesa.php');
 //$mensaje = '';
 
-//verificar que los datos del formulario se hayan enviado via post
-/*if (isset($_POST['enviar']) && $_POST['enviar'] == 'si') {
-	//print_r($_POST);
-	//recuperar los datos del formulario
-	$nombre = $_POST['nombre'];
-	$teléfono = $_POST['teléfono'];
-	$email = $_POST['email'];
-	$asunto = $_POST['asunto'];
-	$comentario = $_POST['comentario'];
 
-	if (!$nombre) {
-		$mensaje = 'Ingrese su nombre';
-	}	elseif (!$teléfono) {
-		$mensaje = 'El teléfono no es valido';
-	}elseif (!$email) {
-		$mensaje = 'El email no es valido';
-	}elseif (!$asunto) {
-		$mensaje = 'Indique un asunto';
-	}elseif (!$comentario) {
-		$mensaje = 'Ingrese un comentario';*/
 
 $procesa = new Procesa();
 
@@ -35,15 +16,15 @@ if (isset($_POST['enviar']) && $_POST['enviar'] == 'si') {
 
 
 	$nombre = strip_tags($_POST['nombre']);
-	$teléfono = $_POST['teléfono'];
+	$telefono = $_POST['teléfono'];
 	$email = $_POST['email'];
 	$asunto = $_POST['asunto'];
 	$ejecutivo = $_POST['ejecutivo'];
 	$comentario = $_POST['comentario'];
 
-	if (!$nombre) {
+	if (!$nombre){
 		$mensaje = 'Ingresa tu nombre';
-	}elseif(!$teléfono){
+	}elseif(!$telefono){
 		$mensaje = 'Ingrese su teléfono';
 	}elseif(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 		$mensaje = 'El email no es válido';
@@ -55,22 +36,24 @@ if (isset($_POST['enviar']) && $_POST['enviar'] == 'si') {
 		$mensaje = 'Ingrese comentario';
 	}else{
 		$procesa->setNombre($nombre);
-		$procesa->setTeléfono($teléfono);
+		$procesa->setTelefono($telefono);
 		$procesa->setEmail($email);
 		$procesa->setAsunto($asunto);
 		$procesa->setEjecutivo($ejecutivo);
 		$procesa->setComentario($comentario);
 
-		echo $procesa->getNombre();
-		echo $procesa->getTeléfono();
-		echo $procesa->getEmail();
-		echo $procesa->getAsunto();
-		echo $procesa->getEjecutivo();
-		echo $procesa->getComentario();
+		//echo $procesa->getNombre();
+		//echo $procesa->getTelefono();
+		//echo $procesa->getEmail();
+		//echo $procesa->getAsunto();
+		//echo $procesa->getEjecutivo();
+		//echo $procesa->getComentario();
+		$m = 'Gracias por escribirnos, pronto nos comunicaremos con usted';
+		header('Location: saludo.php?nombre=' . $nombre);
+
 	}/*
 	else{
-		//$m = 'Gracias por escribirnos, pronto nos comunicaremos con usted';
-		header('Location: saludo.php?nombre=' . $nombre);
+		
 	}*/
 }
 
@@ -137,22 +120,22 @@ if (isset($_POST['enviar']) && $_POST['enviar'] == 'si') {
 						           aria-describedby="emailHelp" placeholder="Ingrese su nombre y apellido" style="width: 50%" value="<?php echo @($nombre); ?>"><br>
 						    <label for="phone">Teléfono</label>
 						    <input type="teléfono" class="form-control" name="teléfono" 
-						           aria-describedby="emailHelp" placeholder="Ingrese su teléfono"style="width: 50%" value="<?php echo @($teléfono); ?>"><br>
+						           aria-describedby="emailHelp" placeholder="Ingrese su teléfono"style="width: 50%" value="<?php echo @($telefono); ?>"><br>
 						    <label for="exampleInputEmail1">Email</label>
 						    <input type="email" class="form-control" name="email" 
 						           aria-describedby="emailHelp" placeholder="Ingrese correo Electrónico"style="width: 50%" value="<?php echo @($email); ?>"><br>
 						    <label>Seleccione un asunto:</label><br>
-									<select name="asunto" class="form-control" style="width: 50%">
-									<option value="<?php echo @($asunto); ?>">Seleccione...</option>
-									<?php foreach($servicios as $servicio): ?>
-							<option value=""><?php echo $servicio; ?></option>
-						<?php endforeach; ?>
-								</select><br>
+									<select name="asunto" class="form-control" style="width: 50%" type="text">
+										<option value="<?php echo @($asunto); ?>" name="">Seleccione...</option>
+										<?php foreach($servicios as $servicio): ?>
+											<option value="<?php echo $servicio; ?>" name="asunto"><?php echo $servicio; ?></option>
+										<?php endforeach; ?>
+									</select><br>
 								<label>Indique Ejecutivo de su confianza</label><br>
 									<select name="ejecutivo" class="form-control" style="width: 50%">
 									<option value="<?php echo @($ejecutivo); ?>">Seleccione...</option>
 									<?php foreach($ejecutivos as $ejecutivo): ?>
-							<option value=""><?php echo $ejecutivo; ?></option>
+							<option value="<?php echo $ejecutivo; ?>"><?php echo $ejecutivo; ?></option>
 						<?php endforeach; ?>
 								</select><br>
 						    <label for="exampleInputEmail1">Comentario</label>
