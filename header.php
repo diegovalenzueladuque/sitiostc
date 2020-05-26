@@ -20,11 +20,11 @@
         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         DESCARGAS
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="manuales.php">DESCARGA DE MANUALES</a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item text-light " href="manuales.php">DESCARGA DE MANUALES</a>
         <!--<a class="dropdown-item" href="#">TELÉFONOS</a>-->
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="instructivos.php">INSTRUCTIVOS</a>
+        <a class="dropdown-item text-light " href="instructivos.php">INSTRUCTIVOS</a>
         </div>
         </li>
         <li class="nav-item">
@@ -34,7 +34,7 @@
         <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label
         ="Search">
-        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">BÚSQUEDA</button
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">BUSCAR</button
         >
         </form>
         </div>
