@@ -3,3 +3,4 @@
 
 $servicios= array('Problema Conectividad','Problema Software Corporativo','Retroalimentación','Varios');
 $ejecutivos= array('Claudio Sepúlveda','Diego Valenzuela','Jorge Robles','Ronald Figueroa');
+$sedes = array('Compañía','Escuela de Teatro','Las Encinas','TNCH','ISUCH','MAC','MAPA');

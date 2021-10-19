@@ -47,12 +47,12 @@ class Procesa{
 		$this->_asunto = $asunto;
 	}
 
-	public function getEjecutivo(){
-		return $this->_ejecutivo;
+	public function getSede(){
+		return $this->_sede;
 	}
 
-	public function setEjecutivo($ejecutivo){
-		$this->_ejecutivo = $ejecutivo;
+	public function setSede($sede){
+		$this->_sede = $sede;
 	}
 
 	public function getComentario(){

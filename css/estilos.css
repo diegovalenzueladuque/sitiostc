@@ -3,22 +3,22 @@ body{
    	color: #545456;
     font-family: Verdana Bold;
     font-size: 14px
-    background-color: #fff;
+    background-color: white;
     background-color: rgba(252, 252, 254, .3);
     width: 100%;
     height: 100%;
-
+}
+.dark-mode {
+    background: rgb(21,25,32);
+    background: radial-gradient(circle, rgba(21,25,32,1) 0%, rgba(8,36,70,1) 100%);
+    color: white;
 }
 header{
 	width:  100%;
 	height: 60px;
 	background: rgba(63,151,233,1);
-    background: -moz-linear-gradient(top, rgba(63,151,233,1) 0%, rgba(2,26,116,0.96) 58%, rgba(2,26,116,0.93) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(63,151,233,1)), color-stop(58%, rgba(2,26,116,0.96)), color-stop(100%, rgba(2,26,116,0.93)));
-    background: -webkit-linear-gradient(top, rgba(63,151,233,1) 0%, rgba(2,26,116,0.96) 58%, rgba(2,26,116,0.93) 100%);
-    background: -o-linear-gradient(top, rgba(63,151,233,1) 0%, rgba(2,26,116,0.96) 58%, rgba(2,26,116,0.93) 100%);
-    background: -ms-linear-gradient(top, rgba(63,151,233,1) 0%, rgba(2,26,116,0.96) 58%, rgba(2,26,116,0.93) 100%);
-    background: linear-gradient(to bottom, rgba(63,151,233,1) 0%, rgba(2,26,116,0.96) 58%, rgba(2,26,116,0.93) 100%);
+    background-color: rgb(61,87,189);
+    background: linear-gradient(90deg, rgba(61,87,189,1) 14%, rgba(9,9,121,1) 79%, rgba(0,166,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f97e9', endColorstr='#021a74', GradientType=0 );
     position: fixed;
     margin-bottom: 25px;
@@ -30,7 +30,7 @@ header{
 footer{
     width:  100%;
     height: 70px;
-    margin-top: 60px;
+    margin-top: 50px;
     background: rgba(63,151,233,1);
     background: -moz-linear-gradient(top, rgba(63,151,233,1) 0%, rgba(2,26,116,0.96) 58%, rgba(2,26,116,0.93) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(63,151,233,1)), color-stop(58%, rgba(2,26,116,0.96)), color-stop(100%, rgba(2,26,116,0.93)));
@@ -66,6 +66,7 @@ h2{
     display: inline-table;
     position: relative;
 }
+
 /*
 ul{
     list-style-type: none;
@@ -95,23 +96,28 @@ li a{
 li a:hover{
     
     text-decoration: none;
-    transition-duration: 0.4s;
-    
-    
-    transition-duration: 0.4s;
+    background-color: #1771D6;
+    border-radius: 8px;
+    transition-duration: 0.8s;
     -webkit-transition-duration: 0.4s;
     transition-delay: 0.1s;
     
 }
+.dropdown-menu a:hover{
+    background-color: #1771D6;
+    border-radius: 8px; 
+    transition-duration: 0.8s;
+}
 nav a:hover{
-    text-decoration: none;
+    text-decoration: underline;
+
     transition-duration: 0.4s;
     text-decoration-color: orange;
     
     transition-duration: 0.4s;
     -webkit-transition-duration: 0.4s;
     transition-delay: 0.1s;
-}*/
+}
 
 a: img hover{
     color: #050584; 
@@ -126,9 +132,9 @@ img a:hover{
     border-bottom: none;
 }
 .lateralizq{
-    background-color: #FBEEC0;
-    border-bottom: 3px solid #F0E0A8;
-    border-right: 3px solid #F0E0A8;
+    background-color: #e9e8e8;
+    border-bottom: 3px solid #868683;
+    border-right: 3px solid #868683;
     text-align: center;
      transition: width 2s, height 2s, transform 2s;
     -moz-transition: width 2s, height 2s, -moz-transform 2s;
@@ -139,11 +145,30 @@ img a:hover{
     vertical-align: middle;
     
 }
+.jumbotron {
+  padding: 3rem inherit;
+  margin-bottom: 1rem;
+  background-color: rgb(61,87,189);
+background: -webkit-linear-gradient(left, rgba(61,87,189,1) 14%, rgba(9,9,121,1) 79%, rgba(0,166,255,1) 100%);
+background: -o-linear-gradient(left, rgba(61,87,189,1) 14%, rgba(9,9,121,1) 79%, rgba(0,166,255,1) 100%);
+background: linear-gradient(to right, rgba(61,87,189,1) 14%, rgba(9,9,121,1) 79%, rgba(0,166,255,1) 100%);
+
+  
+}
+.nav-item{
+
+}
 .lateralizq:hover{
+    background-color: #c4c4c4;
+    transition-duration: 1s;
     transform : scale(1.1);
     -moz-transform : scale(1.1);      /* Firefox */
     -webkit-transform : scale(1.1);   /* Chrome - Safari */
     -o-transform : scale(1.1);        /* Opera */
+    -webkit-box-shadow: 9px 7px 15px -1px rgba(0,0,0,0.8);
+    -moz-box-shadow: 9px 7px 15px -1px rgba(0,0,0,0.8);
+    box-shadow: 9px 7px 15px -1px rgba(0,0,0,0.8);
+    transition-duration: 1s;
 }
 .lateralizq a:{
     text-decoration: none;
@@ -155,6 +180,17 @@ img a:hover{
     vertical-align: middle;
      transition: width 2s, height 2s, transform 2s;
 }
+.btn-outline-secondary{
+    margin-left: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+.btn-outline-dark{
+    margin-left: 20px;
+    vertical-align: middle;
+    text-align: center;
+}
+
 .manuales{
     margin: 0;
     padding: 0;
@@ -207,6 +243,7 @@ img a:hover{
     transform: scale(1) rotate(2deg);
     box-shadow: 0 0 9px rgba(0,0,0, .5);
 }
+
 @media (max-width: 576px) {
     h3{
         text-align: center;
