@@ -42,7 +42,7 @@
 				</div>
 				<div class="col-12 col-sm-12 col-md-4 col-lg-8 col-xl-8" style="text-align: justify;">
 					<h4 style="font-weight: bold">MANUALES DE TELÉFONO</h4><br>
-					<div><img src="img/manual.jpg" alt="" style="float: right;width: 30%; align-self: center "></div>
+					<div><img src="img/manual.png" alt="" style="float: right;width: 30%; align-self: center "></div>
 					<li><a href="descarga/cisco_3905.pdf" type="button" class="btn btn-outline-dark" target="_blank" style="width:150px">CISCO 3905</a></li><br>
 					<li><a href="descarga/cisco_7821.pdf" type="button" class="btn btn-outline-dark"  target="_blank" style="width:150px">CISCO 7821</a></li><br>
 					<li><a href="descarga/cisco_7911.pdf" type="button" class="btn btn-outline-dark"  target="_blank" style="width:150px">CISCO 7911</a></li><br>

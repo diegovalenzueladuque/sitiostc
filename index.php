@@ -55,7 +55,7 @@
 						<a href="img/telefonia.jpg" data-lightbox="gallery" data-title="SOPORTE TELEFONÍA IP"><img src="img/telefonia-thumb.jpg" class="img-fluid"></a>
 					</div>
 					
-					<img src="img/stc.jpg" alt="" style="width: 30%; float: right;">
+					<img src="img/stc.png" alt="" style="width: 30%; float: right;" class="img-fluid">
 				</div>
 				<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
 					<div >
@@ -76,7 +76,7 @@
 					
 				</div>
 			</div>
-<button class="btn btn-outline-dark" onclick="myFunction()">Modo Oscuro</button>
+
 		</div>
 
 		

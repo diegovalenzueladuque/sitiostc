@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item active" style="border-left: solid 1px; border-left-color: #fff">
-        <a class="nav-link" href="equipo.php" >EQUIPO DE TRABAJO<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="equipo.php" >EQUIPO DE TRABAJO</a>
         </li>
         <li class="nav-item active"style="border-left: solid 1px; border-left-color: #fff">
         <a class="nav-link" href="normativa.php">NORMATIVA UNIDAD</a>
@@ -39,15 +39,18 @@
         </form>
         </div>
 </nav>
-      <div class="jumbotron" style="height: 220px; background-image: url(images/soporte2.jpg);background-size: 100%; background-repeat: no-repeat;">
+      <div class="jumbotron" style="background-image: url(images/soporte2.jpg);background-size: 100%; background-repeat: no-repeat;">
           
             <div class="row">
-                <div class="col-6 col-sm-6 col-md-2 col-lg-1 col-xl-1 my-auto"><img src="img/logo_u.png" alt="" style="width: 70px; margin-top: -35px;" >
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-5 my-auto"">
+                    <img src="img/logo_u.png" alt="" style="width: 70px; margin-top: -35px;" >
                 </div>
-                <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 my-auto"><h6 style="color: #fff" class="my-auto">UNIVERSIDAD DE CHILE</h6>
-                    <h6 style="color: #fff" class="my-auto">FACULTAD DE ARTES</h6></div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-auto">
-                    <h4 style="color: #fff; text-align: center">UNIDAD STC</h4></div>
+                <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-7 my-auto">
+                    <h5 style="color: #fff" class="my-auto">UNIVERSIDAD DE CHILE</h5>
+                    <h5 style="color: #fff" class="my-auto">FACULTAD DE ARTES</h5>
+                    <h4 style="color: #fff" class="my-auto">UNIDAD STC</h4>
+                </div>
+                  
            
             
         </div>
