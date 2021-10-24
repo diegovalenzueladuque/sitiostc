@@ -40,7 +40,7 @@
 				</div>
 				<div class="col-12 col-sm-12 col-md-4 col-lg-8 col-xl-8" style="text-align: justify;">
 					<h4 style="font-weight: bold">INSTRUCTIVOS</h4><br>
-					<div><img src="img/manual.jpg" alt="" style="float: right;width: 30%; align-self: center "></div>
+					<div><img src="img/manual.png" alt="" style="float: right;width: 30%; align-self: center "></div>
 				</div>
 				<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
 					<div >

@@ -37,20 +37,22 @@
 			
 					</div><hr style="margin-left: 20px">
 				</div>
-				<div class="col-12 col-sm-12 col-md-4 col-lg-8 col-xl-8">
+				<div class="col-12 col-sm-12 col-md-4 col-lg-8 col-xl-8 my-auto">
+					<div class="col-12 col-sm-12 col-md-4 col-lg-8 col-xl-9 my-auto">
+						<div class="thumbnails"	style="float: left">
+							<h4 style="font-weight: bold">EQUIPO DE SOPORTE</h4><br>
+								<div class="thumbnails" style="float: left; width: 170%;margin-left: 40px;">
+									<a href="img/DiegoSTC.jpg" data-lightbox="gallery" data-title="DIEGO VALENZUELA DUQUE. COORDINADOR UNIDAD STC"><img src="img/DiegoSTC-thumb.jpg" class="img-fluid" style="width: 150%"></a>
+								</div>
+								<div class="thumbnails" style="float: left; width: 170%;margin-left: 40px;">
+									<a href="img/ClaudioSTC.jpg" data-lightbox="gallery" data-title="CLAUDIO SEPÚLVEDA ORELLANA. EJECUTIVO DE SOPORTE"><img src="img/ClaudioSTC-thumb.jpg" class="img-fluid"></a>
+								</div>						
+						</div>
 					
-					<div class="thumbnails"	style="float: left">
-						<h4 style="font-weight: bold">EQUIPO DE SOPORTE</h4><br>
-					<div class="column" style="float: left; width: 150%;margin-left: 40px;">
-						<a href="img/DiegoSTC.jpg" data-lightbox="gallery" data-title="DIEGO VALENZUELA DUQUE. COORDINADOR UNIDAD STC"><img src="img/DiegoSTC-thumb.jpg" class="img-fluid" style="width: 150%"></a>
+						<img src="img/stc2.png" alt="" style="width: 30%; float: right;">
+												
 					</div>
-					<div class="column" style="float: left; width: 150%;margin-left: 40px;">
-						<a href="img/ClaudioSTC.jpg" data-lightbox="gallery" data-title="CLAUDIO SEPÚLVEDA ORELLANA. EJECUTIVO DE SOPORTE"><img src="img/ClaudioSTC-thumb.jpg" class="img-fluid"></a>
-					</div>	
-						
-						
-					</div>
-					<div><img src="img/stc2.jpg" alt="" style="width: 30%; float: right;"></div>
+					
 				</div>
 				<div class="col-12 col-sm-6 col-md-4 col-lg-2 col-xl-2">
 					<div >

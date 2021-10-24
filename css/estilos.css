@@ -26,6 +26,9 @@ header{
    
    
 }
+.header .navbar{
+    background-color: transparent !important;
+}
 
 footer{
     width:  100%;
