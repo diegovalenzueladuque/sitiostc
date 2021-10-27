@@ -92,7 +92,8 @@ li a{
 li a:hover{
     
     text-decoration: none;
-    background-color: #1771D6;
+    background: rgb(94,194,235);
+    background: radial-gradient(circle, rgba(94,194,235,1) 0%, rgba(50,96,193,1) 100%);
     border-radius: 8px;
     transition-duration: 0.8s;
     -webkit-transition-duration: 0.4s;
@@ -100,7 +101,8 @@ li a:hover{
     
 }
 .dropdown-menu a:hover{
-    background-color: #1771D6;
+    background: rgb(94,194,235);
+    background: radial-gradient(circle, rgba(94,194,235,1) 0%, rgba(50,96,193,1) 100%);
     border-radius: 8px; 
     transition-duration: 0.8s;
 }
